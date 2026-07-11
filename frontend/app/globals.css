@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f7f9f8;
+  color: #151b24;
+}
+
+/* Data table shell shared by preview + results tables */
+.data-table-wrap {
+  overflow-x: auto;
+  overflow-y: auto;
+  max-height: 24rem;
+  border-radius: 0.75rem;
+}
+
+.data-table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  font-variant-numeric: tabular-nums;
+}
+
+.data-table thead th {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #fbfbfa;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.68rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: rgba(21, 27, 36, 0.45);
+  padding: 0.65rem 1rem;
+  border-bottom: 1px solid rgba(21, 27, 36, 0.08);
+  white-space: nowrap;
+}
+
+.data-table tbody td {
+  padding: 0.6rem 1rem;
+  border-bottom: 1px solid rgba(21, 27, 36, 0.05);
+  white-space: nowrap;
+  font-size: 0.82rem;
+}
+
+.data-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.data-table tbody tr:hover {
+  background: rgba(14, 148, 136, 0.04);
+}
+
+::-webkit-scrollbar {
+  height: 10px;
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(21, 27, 36, 0.15);
+  border-radius: 999px;
+}
