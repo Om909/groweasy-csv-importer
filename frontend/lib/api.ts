@@ -1,6 +1,6 @@
 import type { ImportResponse } from "./types";
 
-const API_BASE = process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:5000";
+const API_BASE = process.env.NEXT_PUBLIC_API_BASE_URL || "https://groweasy-csv-importer-3-usth.onrender.com";
 
 export async function importCsvFile(file: File): Promise<ImportResponse> {
   const formData = new FormData();
